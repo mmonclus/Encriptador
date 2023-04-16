@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="shortcut icon" href="./img/icon.png">
+    <title>Encriptador</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="back"></div>
+        <div class="">
+            <header class="container-header">
+                
+                <div class="group-title">
+                    <img src="./img/alura.png" />
+                    <h1 class="title">Encriptador <strong>de Texto</strong></h1>
+                   
+                </div>
+                <div class="group-btns">
+                    <button class="btn btn-help">Instrucciones</button>
+                    <button class="btn btn-info" onclick="location.href='https://github.com/alura-challenges/challenge-one-encriptador-latam'">Más Información</button>
+                </div>
+            </header>
+            <div class="help">
+                <div class="help-content">
+                    <div class="help-header">
+                        <span class="close">X</span>
+                        <h5>Llaves de encriptación utilizadas</h5>
+                    </div>
+                    <div class="help-body">
+                        <ul>
+                            <li>La letra "<span class="help-rule">e</span>" es convertida en "<span class="help-rule">enter</span>"</li>
+                            <li>La letra "<span class="help-rule">i</span>" &nbsp;es convertida en "<span class="help-rule">imes</span>"</li>
+                            <li>La letra "<span class="help-rule">a</span>" es convertida en "<span class="help-rule">ai</span>"</li>
+                            <li>La letra "<span class="help-rule">o</span>" es convertida en "<span class="help-rule">ober</span>"</li>
+                            <li>La letra "<span class="help-rule">u</span>" es convertida en "<span class="help-rule">ufat</span>"</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <main class="container-content">
+                <div class="container-section">
+                    <section class="section-input">
+                        <div class="card">
+                            <label>Ingrese el texto aquí:</label>
+                            <div class="card-input">
+                               
+                                <textarea  class="text input"   pattern="[a-z0-9\s]*]*" oninput="validateMessage(this)"></textarea>
+                                <p> <span class="advertencia">&#x26A0;</span>Solo usar letras minúsculas, no deben ser utilizados letras con acentos ni caracteres especiales.</p>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-btns">
+                        <button class="btn btn-on">Encriptar</button>
+                        <button class="btn btn-off">Desencriptar</button>
+                        <button class="btn btn-cls">Limpiar</button>
+                    </section>
+                    <section class="section-output">
+                        <div class="card">
+                            <div class="msg-default">
+                                <img src="./img/busqueda.png" />
+                                <h4>Ningún mensaje fue encontrado</h4>
+                                <p>Ingrese el texto que desee encriptar o desencriptar.</p>
+                            </div>
+                            <div class="msg-result">
+                                <label>Mensaje:</label>
+                                <div class="result">
+                                    <textarea class="text output" disabled></textarea>
+                                    <button class="btn btn-copy">Copiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+       
+    </div>
+<br>
+<br>
+    <footer class="container-footer">
+    <div>   
+        <p class="credits">© 2023 | <a href="">Maria Elisa Monclus</p>
+    </div> 
+    </footer>
+    <script src="js/encryptor.js"></script>
+</body>
+</html>
